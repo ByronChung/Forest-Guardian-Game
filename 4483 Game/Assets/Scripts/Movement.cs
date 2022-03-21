@@ -8,6 +8,8 @@ public class Movement : MonoBehaviour
     private Rigidbody2D body;
     private bool grounded;
 
+    public float health = 3;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -31,5 +33,10 @@ public class Movement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         grounded = true;
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            health -= 1;
+        }
     }
 }
