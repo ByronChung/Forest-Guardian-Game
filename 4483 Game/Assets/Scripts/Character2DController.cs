@@ -6,10 +6,13 @@ public class Character2DController : MonoBehaviour
 {
     public float MovementSpeed = 1;
     public float JumpForce = 1;
-    public ProjectileBehaviour ProjectilePrefab;
-    public Transform LaunchOffset;
+    public GameObject[] bullets;
+
+    public Transform[] LaunchOffset;
 
     private Rigidbody2D _rigidbody;
+
+    public WeaponScript weapons;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +36,13 @@ public class Character2DController : MonoBehaviour
         }
 
         if(Input.GetButtonDown("Fire1")){
-            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            Quaternion projectileEuler;
+            if (transform.rotation.eulerAngles.y > 0){
+                projectileEuler = Quaternion.Euler(0, 0, -90);
+            } else{
+                projectileEuler = Quaternion.Euler(0, 0, 90);
+            }
+            Instantiate(bullets[weapons.currentWeaponIndex], LaunchOffset[weapons.currentWeaponIndex].position, projectileEuler);
         }
     }
 }
