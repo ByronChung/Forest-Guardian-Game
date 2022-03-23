@@ -16,7 +16,7 @@ public class SlimeBall : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         //deal damage
-       if (collider.name != "GreenSlime")
+       if (!(collider.name.Contains("GreenSlime")))
         {
             Destroy(gameObject);
         }
