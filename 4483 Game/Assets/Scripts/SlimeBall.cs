@@ -15,6 +15,7 @@ public class SlimeBall : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        Debug.Log(collider.gameObject.name);
         //deal damage
        if (!(collider.name.Contains("GreenSlime")))
         {
