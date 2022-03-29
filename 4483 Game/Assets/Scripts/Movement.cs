@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] GameObject Player;
     [SerializeField] private float speed;
     private Rigidbody2D body;
     private bool grounded;
-    public float teleportDistance = 10;
+    
 
     public float health = 3;
 
@@ -25,10 +24,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
 
-        if (Input.GetKey(KeyCode.Q))
-        {
-            Teleport();
-        }
     }
 
     private void Jump()
@@ -47,8 +42,4 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private void Teleport()
-    {
-        Player.transform.position = new Vector2(Player.transform.position.x + teleportDistance, Player.transform.position.y);
-    }
 }
