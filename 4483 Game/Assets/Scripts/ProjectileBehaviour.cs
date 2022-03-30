@@ -15,7 +15,6 @@ public class ProjectileBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision){
         GameObject collisionGameObject = collision.gameObject;
-        Debug.Log(collisionGameObject.name);
 
         if(collisionGameObject.GetComponent<HealthScript>() != null){
             collisionGameObject.GetComponent<HealthScript>().TakeDamage(damage);

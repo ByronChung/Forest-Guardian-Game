@@ -38,6 +38,9 @@ public class Character2DController : MonoBehaviour
         }
 
         if(Input.GetButtonDown("Fire1")){
+            if (weapons.currentWeaponIndex != 0){
+                weapons.bulletCount[weapons.currentWeaponIndex-1] -= 1;
+            }
             Quaternion projectileEuler;
             if (transform.rotation.eulerAngles.y > 0){
                 projectileEuler = Quaternion.Euler(0, 0, -90);
