@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2158086070164517935, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
@@ -35,17 +35,17 @@ PrefabInstance:
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.02
+      value: 7.98
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.01
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.6963328
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
@@ -85,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 3975787117917585222, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_Name
-      value: rifleAmmo Variant
+      value: rifleAmmo
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 545185649018736396, guid: 10ba90b383285cf4681bfe112f7d226d, type: 3}

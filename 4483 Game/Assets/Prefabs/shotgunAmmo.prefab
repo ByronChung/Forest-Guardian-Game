@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 2158086070164517935, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
@@ -26,32 +26,32 @@ PrefabInstance:
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.15
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.15
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.02
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.01
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.6963328
+      value: -0.5307535
       objectReference: {fileID: 0}
     - target: {fileID: 3967394464504532288, guid: 10ba90b383285cf4681bfe112f7d226d,
         type: 3}
@@ -143,4 +143,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons: {fileID: 0}
-  incAmmoCount: 2
+  incAmmoCount: 1
