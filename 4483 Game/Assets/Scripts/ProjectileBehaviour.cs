@@ -15,10 +15,15 @@ public class ProjectileBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision){
         GameObject collisionGameObject = collision.gameObject;
+        string selfName = gameObject.name;
 
         if(collisionGameObject.GetComponent<HealthScript>() != null){
             collisionGameObject.GetComponent<HealthScript>().TakeDamage(damage);
         }
-        Destroy(gameObject);
+
+        // Can't just destroy itself if the player shoots too fast
+        if(collisionGameObject.name != selfName ){
+            Destroy(gameObject);
+        }
     }
 }

@@ -10,6 +10,8 @@ public class WeaponScript : MonoBehaviour
     public GameObject[] guns;
     public GameObject weaponHolder;
     public GameObject currentGun;
+
+    public AudioClip[] gunSFX;
     // Start is called before the first frame update
     async void Start()
     {
@@ -29,9 +31,11 @@ public class WeaponScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Swap back to the pistol if they run out of ammo on the rifle
         if (currentWeaponIndex == 1 && bulletCount[0] == 0){
             swapToPistol();
         }
+        // Swap back to the pistol if they run out of ammo on the shotgun
         if (currentWeaponIndex == 2 && bulletCount[1] == 0){
             swapToPistol();
         }

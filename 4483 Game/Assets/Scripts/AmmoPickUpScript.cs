@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class AmmoPickUpScript : MonoBehaviour
 {
+    public WeaponScript weapons;
+    private string ammoName;
+    public int incAmmoCount;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ammoName = gameObject.name;
     }
 
     // Update is called once per frame
@@ -15,9 +18,19 @@ public class AmmoPickUpScript : MonoBehaviour
     {
         
     }
-
+    
+    // Give the player ammo if they collide with the pickup
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log(collider.gameObject.name);
+        if (collider.gameObject.name == "Player"){
+            // Increment rifle ammo
+            if (ammoName == "rifleAmmo"){
+                weapons.bulletCount[0] += incAmmoCount;
+                Destroy(gameObject);
+            }
+            else if (ammoName == "shotgunAmmo"){
+                weapons.bulletCount[1] += incAmmoCount;
+            }
+        }
     }
 }
