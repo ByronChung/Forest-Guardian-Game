@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float speed;
     private Rigidbody2D body;
     private bool grounded;
+    
 
     public float health = 3;
 
@@ -22,6 +23,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
+
     }
 
     private void Jump()
@@ -39,4 +41,5 @@ public class Movement : MonoBehaviour
             health -= 1;
         }
     }
+
 }
