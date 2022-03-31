@@ -47,6 +47,11 @@ public class Character2DController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
+            // Update the ammo count for the rifle and shotgun
+            if (weapons.currentWeaponIndex != 0){
+                weapons.bulletCount[weapons.currentWeaponIndex-1] -= 1;
+            }
+            
             Quaternion projectileEuler;
             if (transform.rotation.eulerAngles.y > 0)
             {
