@@ -140,7 +140,7 @@ public class Boss : MonoBehaviour
         rb.MovePosition(newPos);
 
         //if close enough to player, do melee attack
-        if (Vector2.Distance(player.position, rb.position) <= 1.5)
+        if (Vector2.Distance(player.position, rb.position) <= 1.75)
         {
             //stop moving and hit
             newPos = (rb.position);
