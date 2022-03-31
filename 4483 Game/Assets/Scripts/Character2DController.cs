@@ -26,6 +26,7 @@ public class Character2DController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!PauseMenu.paused){
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
@@ -46,6 +47,10 @@ public class Character2DController : MonoBehaviour
             }
             Instantiate(bullets[weapons.currentWeaponIndex], LaunchOffset[weapons.currentWeaponIndex].position, projectileEuler);
         }
+
+        }
+
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
