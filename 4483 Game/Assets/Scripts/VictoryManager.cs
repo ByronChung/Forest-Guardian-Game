@@ -8,7 +8,7 @@ public class VictoryManager : MonoBehaviour
 {
     public void BackButton(){
 
-        SceneManager.LoadScene("Victory");
+        SceneManager.LoadScene("Menu");
     }
 
 }
