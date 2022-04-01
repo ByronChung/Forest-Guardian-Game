@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthScript : MonoBehaviour
 {
     public float startHealth;
-    private float hp;
+    public float hp;
 
     //public PlayerHealthBar playerHealthBar;
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class HealthScript : MonoBehaviour
     public void TakeDamage(float damage){
         hp -= damage;
 
-        if (hp <= 0f){
+        if (hp <= 0f && gameObject.name != "Boss"){
             Die();
         }
 

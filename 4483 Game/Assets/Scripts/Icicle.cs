@@ -8,7 +8,7 @@ public class Icicle : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            //deal damage
+            other.GetComponent<Character2DController>().health -= 1;
 
         }
         Destroy(gameObject);

@@ -43,7 +43,7 @@ public class Fireball : MonoBehaviour
         }
         if (other.name == "Player")
         {
-            //deal damage
+            other.GetComponent<Character2DController>().health -= 2;
         }
     }
 }
