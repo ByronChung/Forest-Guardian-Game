@@ -21,10 +21,16 @@ public class Character2DController : MonoBehaviour
 
     public float health;
 
-    public float dashSpeed = 50;
+    public float dashSpeed = 30;
     private float dashTime;
     public float startDashTime = 0.1f;
     private int direction;
+
+    private float shotCD = 0f;
+    private bool hasFired = false;
+
+    private float dashCD = 0f;
+    private bool facingRight = true;
 
     public Slider healthBar;
 
@@ -49,8 +55,28 @@ public class Character2DController : MonoBehaviour
             UpdateMovement();
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        //handle death
+        if (health <= 0)
         {
+            Die();
+        }
+
+        //decrement shot countdown
+        shotCD -= Time.deltaTime;
+        //dont allow player to spam click to shoot
+        if (hasFired)
+        {
+            if (shotCD <= 0)
+            {
+                hasFired = false;
+            }
+        }
+
+        if (Input.GetButtonDown("Fire1") && !hasFired)
+        {
+            shotCD = 1.0f;
+            hasFired = true;
+
             // Update the ammo count for the rifle and shotgun
             if (weapons.currentWeaponIndex != 0){
                 weapons.bulletCount[weapons.currentWeaponIndex-1] -= 1;
@@ -136,23 +162,23 @@ public class Character2DController : MonoBehaviour
     }
 
     private void Die(){
-        Scene scene = SceneManager.GetActiveScene(); 
+        Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
     public void dealDamage(int damage){
         health -= damage;
-        if (health <= 0f){
+        if (health <= 0){
             Die();
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "GreenSlime")
+        if (collision.gameObject.name.Contains("GreenSlime"))
         {
             dealDamage(1);
         }
-        if (collision.gameObject.name == "GoldSlime")
+        if (collision.gameObject.name.Contains("GoldSlime"))
         {
             dealDamage(3);
         }

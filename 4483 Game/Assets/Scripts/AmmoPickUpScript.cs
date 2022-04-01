@@ -30,6 +30,7 @@ public class AmmoPickUpScript : MonoBehaviour
             }
             else if (ammoName == "shotgunAmmo"){
                 weapons.bulletCount[1] += incAmmoCount;
+                Destroy(gameObject);
             }
         }
     }
