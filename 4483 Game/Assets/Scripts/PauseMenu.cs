@@ -22,18 +22,19 @@ public class PauseMenu : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
         {
             paused = !paused;
-        }
-       
-
             if (paused)
             {
-            pauseGame();
+                pauseGame();
             }
 
             else
             {
-            resumeGame();
+                resumeGame();
             }
+        }
+       
+
+            
 
         
     }

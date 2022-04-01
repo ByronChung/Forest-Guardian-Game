@@ -48,6 +48,8 @@ public class Character2DController : MonoBehaviour
         //update health bar
         healthBar.value = health;
 
+        
+
         float horizontalInput = Input.GetAxis("Horizontal");
 
         if (!disabled)
@@ -181,6 +183,10 @@ public class Character2DController : MonoBehaviour
         if (collision.gameObject.name.Contains("GoldSlime"))
         {
             dealDamage(3);
+        }
+        if (collision.gameObject.name.Contains("Bat"))
+        {
+            dealDamage(1);
         }
     }
 

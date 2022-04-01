@@ -501,11 +501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4675954415004836, guid: ba91827772c36b440ab61f47c756e0f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.03
+      value: -9.52858
       objectReference: {fileID: 0}
     - target: {fileID: 4675954415004836, guid: ba91827772c36b440ab61f47c756e0f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.99
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 4675954415004836, guid: ba91827772c36b440ab61f47c756e0f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -775,7 +775,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: be64544bade297e4d872dd74c66256d2, type: 3}
   - {fileID: 8300000, guid: 1b145bcffd767854fb0c71c37678ebaa, type: 3}
   - {fileID: 8300000, guid: 67535d6a9b045954e925424a157be5d5, type: 3}
-  health: 10
+  health: 25
   dashSpeed: 50
   startDashTime: 0.1
   healthBar: {fileID: 0}

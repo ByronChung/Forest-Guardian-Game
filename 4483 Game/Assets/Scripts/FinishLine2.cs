@@ -8,7 +8,7 @@ public class FinishLine2 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
 
         if(collision.tag == "Player"){
-            SceneManager.LoadScene("Victory");
+            SceneManager.LoadScene("Level3");
         }
         
     }
