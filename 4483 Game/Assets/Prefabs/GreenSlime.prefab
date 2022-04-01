@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 229560990}
   - component: {fileID: 229560991}
   - component: {fileID: 229560992}
+  - component: {fileID: 2385136316805213219}
   m_Layer: 0
   m_Name: GreenSlime
   m_TagString: Enemy
@@ -232,7 +233,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  player: {fileID: 0}
   playerSpotted: 0
   aiPath: {fileID: 229560990}
   destinationSetter: {fileID: 229560992}
@@ -323,3 +323,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &2385136316805213219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2829894397768627600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c83352b5de4a6240b687a7512d5c76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 5
