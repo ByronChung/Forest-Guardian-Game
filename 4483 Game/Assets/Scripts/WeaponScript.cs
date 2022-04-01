@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class WeaponScript : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class WeaponScript : MonoBehaviour
     public GameObject[] guns;
     public GameObject weaponHolder;
     public GameObject currentGun;
+
+    public TextMeshProUGUI gun;
+    public TextMeshProUGUI ammo;
 
     public AudioClip[] gunSFX;
     // Start is called before the first frame update
@@ -31,6 +36,23 @@ public class WeaponScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //update UI
+        if (currentWeaponIndex == 0)
+        {
+            gun.text = "Pistol: ";
+            ammo.text = "\u221E";
+        }
+        else if (currentWeaponIndex == 1)
+        {
+            gun.text = "Rifle: ";
+            ammo.text = bulletCount[0].ToString();
+        }
+        else if (currentWeaponIndex == 2)
+        {
+            gun.text = "Shotgun: ";
+            ammo.text = bulletCount[1].ToString();
+        }
+
         // Swap back to the pistol if they run out of ammo on the rifle
         if (currentWeaponIndex == 1 && bulletCount[0] == 0){
             swapToPistol();
