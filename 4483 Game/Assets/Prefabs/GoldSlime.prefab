@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1344144837}
   - component: {fileID: 1344144836}
   - component: {fileID: 1344144838}
+  - component: {fileID: -3428600316858665444}
   m_Layer: 0
   m_Name: GoldSlime
   m_TagString: Untagged
@@ -287,3 +288,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &-3428600316858665444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2815033213873203003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c83352b5de4a6240b687a7512d5c76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 10
