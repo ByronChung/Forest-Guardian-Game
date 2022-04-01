@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 417935195}
     m_Modifications:
+    - target: {fileID: 915251341, guid: 9fcb8248622ce6a4685dd2f91ebb4a7d, type: 3}
+      propertyPath: weapons
+      value: 
+      objectReference: {fileID: 1642304458}
     - target: {fileID: 1551327273800592923, guid: 9fcb8248622ce6a4685dd2f91ebb4a7d,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6105,6 +6109,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 417935195}
     m_Modifications:
+    - target: {fileID: 915251341, guid: 158d6a56925a768499c933049ca47bfa, type: 3}
+      propertyPath: weapons
+      value: 
+      objectReference: {fileID: 1642304458}
     - target: {fileID: 1551327273800592923, guid: 158d6a56925a768499c933049ca47bfa,
         type: 3}
       propertyPath: m_SortingOrder
@@ -17983,12 +17991,12 @@ PrefabInstance:
     - target: {fileID: 5816786676020758192, guid: 70b3081ab744cd94fb35f56697a4c3d8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 57.68
+      value: 27.73
       objectReference: {fileID: 0}
     - target: {fileID: 5816786676020758192, guid: 70b3081ab744cd94fb35f56697a4c3d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.78
+      value: 3.68
       objectReference: {fileID: 0}
     - target: {fileID: 5816786676020758192, guid: 70b3081ab744cd94fb35f56697a4c3d8,
         type: 3}
@@ -20164,6 +20172,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 417935195}
     m_Modifications:
+    - target: {fileID: 915251341, guid: 9fcb8248622ce6a4685dd2f91ebb4a7d, type: 3}
+      propertyPath: weapons
+      value: 
+      objectReference: {fileID: 1642304458}
     - target: {fileID: 1551327273800592923, guid: 9fcb8248622ce6a4685dd2f91ebb4a7d,
         type: 3}
       propertyPath: m_SortingOrder

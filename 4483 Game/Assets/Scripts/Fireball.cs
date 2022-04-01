@@ -35,7 +35,7 @@ public class Fireball : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.name != "Boss")
+        if (other.name != "Boss" && !(other.name.Contains("bullet")))
         {
             rb.velocity = new Vector2(0,0);
             collision = true;

@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83352b5de4a6240b687a7512d5c76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 50
+  startHealth: 40
   hp: 0
 --- !u!1 &696413852
 GameObject:
@@ -1398,9 +1398,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 50
+  m_MaxValue: 40
   m_WholeNumbers: 1
-  m_Value: 50
+  m_Value: 40
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3012,7 +3012,7 @@ PrefabInstance:
     - target: {fileID: 5816786676020758192, guid: 70b3081ab744cd94fb35f56697a4c3d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7839859
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 5816786676020758192, guid: 70b3081ab744cd94fb35f56697a4c3d8,
         type: 3}
