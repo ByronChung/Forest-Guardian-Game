@@ -7,12 +7,12 @@ public class HealthScript : MonoBehaviour
     public float startHealth;
     private float hp;
 
-    public PlayerHealthBar playerHealthBar;
+    //public PlayerHealthBar playerHealthBar;
     // Start is called before the first frame update
     void Start()
     {
         hp = startHealth;
-        playerHealthBar.SetMaxHealth(startHealth);
+        //playerHealthBar.SetMaxHealth(startHealth);
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class HealthScript : MonoBehaviour
             Die();
         }
 
-        playerHealthBar.SetHealth(hp);
+        //playerHealthBar.SetHealth(hp);
     }
 
     void Die(){

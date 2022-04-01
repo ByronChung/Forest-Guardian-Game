@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Character2DController : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class Character2DController : MonoBehaviour
     public float startDashTime = 0.1f;
     private int direction;
 
-
+    public Slider healthBar;
 
     private float teleportDistance = 2;
     // Start is called before the first frame update
@@ -38,6 +39,9 @@ public class Character2DController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //update health bar
+        healthBar.value = health;
+
         float horizontalInput = Input.GetAxis("Horizontal");
 
         if (!disabled)

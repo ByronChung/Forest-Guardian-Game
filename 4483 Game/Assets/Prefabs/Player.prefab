@@ -53,6 +53,8 @@ MonoBehaviour:
   guns: []
   weaponHolder: {fileID: 734221608}
   currentGun: {fileID: 0}
+  gun: {fileID: 0}
+  ammo: {fileID: 0}
   gunSFX: []
 --- !u!82 &82535453
 AudioSource:
@@ -579,8 +581,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &2135944579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -733,6 +735,7 @@ MonoBehaviour:
   health: 10
   dashSpeed: 50
   startDashTime: 0.1
+  healthBar: {fileID: 0}
 --- !u!4 &5816786676020758192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4675954415004836, guid: ba91827772c36b440ab61f47c756e0f7,
