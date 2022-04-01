@@ -26,4 +26,8 @@ public class MenuController : MonoBehaviour
     public void ExitButton(){
         Application.Quit();
     }
+
+    public void VictoryBack(){
+        SceneManager.LoadScene("Menu");
+    }
 }
