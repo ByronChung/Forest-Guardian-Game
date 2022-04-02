@@ -23,4 +23,4 @@ Brandon Yan - byan54@uwo.ca
 Byron Chung - bchung58@uwo.ca
 Eric Marsi - emarsi@uwo.ca
 Pablo Ortega - portega@uwo.ca
-Xingjian Mao - xmao29@uwo.ca
+XingJian Mao - xmao29@uwo.ca
