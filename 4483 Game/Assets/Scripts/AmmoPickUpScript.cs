@@ -24,11 +24,11 @@ public class AmmoPickUpScript : MonoBehaviour
     {
         if (collider.gameObject.name == "Player"){
             // Increment rifle ammo
-            if (ammoName == "rifleAmmo"){
+            if (ammoName.Contains("rifleAmmo")){
                 weapons.bulletCount[0] += incAmmoCount;
                 Destroy(gameObject);
             }
-            else if (ammoName == "shotgunAmmo"){
+            else if (ammoName.Contains("shotgunAmmo")){
                 weapons.bulletCount[1] += incAmmoCount;
                 Destroy(gameObject);
             }

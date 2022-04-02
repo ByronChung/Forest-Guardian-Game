@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     private Rigidbody2D rb;
     private Transform player;
 
-    public float speed = 1f;
+    public float speed = 3f;
 
     private bool facingRight = true;
 
@@ -59,7 +59,7 @@ public class Boss : MonoBehaviour
             maxFireballCD = 1.0f;
             maxFireballs = 5;
             maxSummonCD = 0.5f;
-            speed = 3f;
+            speed = 4f;
             animator.SetFloat("castSpeed", 2);
         }
 

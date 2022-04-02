@@ -21,7 +21,8 @@ public class SlimeBall : MonoBehaviour
             Debug.Log(collider.gameObject.name);
             collider.gameObject.GetComponent<Character2DController>().dealDamage(1);
         }
-       if (!collider.gameObject.name.Contains("Green") && !collider.gameObject.name.Contains("bullet"))
+        print(collider.name);
+       if (!collider.gameObject.name.Contains("Green") && !collider.gameObject.name.Contains("bullet") && !collider.gameObject.name.Contains("Bat"))
         {
             Destroy(gameObject);
         }
