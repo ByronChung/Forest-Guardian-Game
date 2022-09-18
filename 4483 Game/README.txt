@@ -17,10 +17,3 @@ amounts of damage. You have infinite ammo for the pistol, and you can find ammo 
 rifle and shotgun to replenish some ammo. The dash is useful for getting away from enemies, and is
 required to make some of the jumps for platforming. The third level is a bossfight, the boss will 
 get stronger once you take him down to half health. 
-
-Group Members:
-Brandon Yan - byan54@uwo.ca
-Byron Chung - bchung58@uwo.ca
-Eric Marsi - emarsi@uwo.ca
-Pablo Ortega - portega@uwo.ca
-XingJian Mao - xmao29@uwo.ca
