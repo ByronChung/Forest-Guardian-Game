@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     private Rigidbody2D rb;
     private Transform player;
 
-    public float speed = 1f;
+    public float speed = 3f;
 
     private bool facingRight = true;
 
@@ -33,11 +33,10 @@ public class Boss : MonoBehaviour
     private Vector2 position;
     public Transform icePoint;
 
-    public int health = 100;
-
     private bool playerInRange = false;
 
     public Slider healthbar;
+    private HealthScript healthScript;
 
     void Start()
     {
@@ -45,26 +44,27 @@ public class Boss : MonoBehaviour
         player = GameObject.Find("Player").transform;
         animator = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody2D>();
+        healthScript = gameObject.GetComponent<HealthScript>();
     }
 
     
     void Update()
     {
         //update healthbar
-        healthbar.value = health;
+        healthbar.value = healthScript.hp;
 
         //increase stats when at/below half health
-        if (health <= 50)
+        if (healthScript.hp <= healthScript.startHealth/2)
         {
             maxFireballCD = 1.0f;
             maxFireballs = 5;
             maxSummonCD = 0.5f;
-            speed = 3f;
+            speed = 4f;
             animator.SetFloat("castSpeed", 2);
         }
 
         //check death
-        if (health > 0)
+        if (healthScript.hp > 0)
         {
             //chase player by default
             if (!casting && !summoning)
@@ -101,7 +101,7 @@ public class Boss : MonoBehaviour
             //count down to mix up attacks
             countdown -= Time.deltaTime;
         }
-        if (health <= 0)
+        if (healthScript.hp <= 0)
         {
             //stop moving
             Vector2 newPos = (rb.position);
@@ -153,7 +153,7 @@ public class Boss : MonoBehaviour
     {
         if (playerInRange)
         {
-            //deal damage
+            player.GetComponent<Character2DController>().health -= 1;
         }
     }
 
